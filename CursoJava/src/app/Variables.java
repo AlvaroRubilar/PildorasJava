@@ -6,8 +6,8 @@ package app;
 public class Variables {
 
     public static void main(String[] args) {
-        int edad;
-        edad = 35;
+        int edad = 35;
+        edad = 75;
         System.out.println(edad);
     }
 }
