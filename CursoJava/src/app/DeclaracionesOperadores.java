@@ -7,13 +7,13 @@ public class DeclaracionesOperadores {
 
     public static void main(String[] args) {
 
-        int a = 5;
+        double a = 5;
 
-        int b;
+        double b;
 
         b = 7;
 
-        int c = b / a;//división entera
+        double c = b / a;//división exacta
 
         //c++;
 
