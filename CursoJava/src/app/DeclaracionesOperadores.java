@@ -13,15 +13,15 @@ public class DeclaracionesOperadores {
 
         b = 7;
 
-        int c = b + a;
+        int c = b / a;//división entera
 
-        c++;
+        //c++;
 
-        c+=8;
+        //c += 8;
+
+       
 
         System.out.println(c);
-
-
 
     }
 }
