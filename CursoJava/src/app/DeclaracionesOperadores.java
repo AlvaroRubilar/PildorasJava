@@ -1,0 +1,27 @@
+package app;
+
+/**
+ * DeclaracionesOperadores
+ */
+public class DeclaracionesOperadores {
+
+    public static void main(String[] args) {
+
+        int a = 5;
+
+        int b;
+
+        b = 7;
+
+        int c = b + a;
+
+        c++;
+
+        c+=8;
+
+        System.out.println(c);
+
+
+
+    }
+}
