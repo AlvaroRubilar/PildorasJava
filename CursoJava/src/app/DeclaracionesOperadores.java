@@ -7,11 +7,13 @@ public class DeclaracionesOperadores {
 
     public static void main(String[] args) {
 
-        final int c = 5;
+        final double aPulgadas = 2.54;
 
-        c = 7;
+        double cm = 6;
 
-        System.out.println(c);
+        double resultado = cm/aPulgadas;
+
+        System.out.println("En "+ cm + " cm hay "+ resultado + " pulgadas");
 
     }
 }
