@@ -7,7 +7,7 @@ public class DeclaracionesOperadores {
 
     public static void main(String[] args) {
 
-        int c = 5;
+        final int c = 5;
 
         c = 7;
 
