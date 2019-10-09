@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EntradaEjemplo1",
+            "request": "launch",
+            "mainClass": "app.EntradaEjemplo1",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EntradaEjemplo1",
+            "request": "launch",
+            "mainClass": "EntradaEjemplo1",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - manipulaCadenas2",
             "request": "launch",
             "mainClass": "app.manipulaCadenas2",
