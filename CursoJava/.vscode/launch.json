@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AccesoAplicacion",
+            "request": "launch",
+            "mainClass": "app.AccesoAplicacion",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Areas",
             "request": "launch",
             "mainClass": "app.Areas",
