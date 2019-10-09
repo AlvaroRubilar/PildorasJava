@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EvaluaEdad",
+            "request": "launch",
+            "mainClass": "app.EvaluaEdad",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - EntradaNumeros",
             "request": "launch",
             "mainClass": "app.EntradaNumeros",
