@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AdivinaNumero",
+            "request": "launch",
+            "mainClass": "app.AdivinaNumero",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AccesoAplicacion",
             "request": "launch",
             "mainClass": "app.AccesoAplicacion",
