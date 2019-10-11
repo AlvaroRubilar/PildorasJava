@@ -22,7 +22,7 @@ public class AdivinaNumero {
                 
             } 
             
-        }while(numero!=aleatorio)
+        }while(numero!=aleatorio);
         System.out.println("Correcto el número es "+ aleatorio + " en "+intentos+" intentos.");
         entrada.close();
     }
