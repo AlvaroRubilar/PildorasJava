@@ -11,7 +11,7 @@ public class AdivinaNumero {
         Scanner entrada= new Scanner(System.in);
         int aleatorio = (int)Math.round(Math.random()*100);
         int numero=0, intentos=0;
-        while(numero!=aleatorio){
+       do {
             intentos++;
             System.out.println("Introduce un número, por favor");
             numero = entrada.nextInt();
@@ -22,7 +22,7 @@ public class AdivinaNumero {
                 
             } 
             
-        }
+        }while(numero!=aleatorio)
         System.out.println("Correcto el número es "+ aleatorio + " en "+intentos+" intentos.");
         entrada.close();
     }
