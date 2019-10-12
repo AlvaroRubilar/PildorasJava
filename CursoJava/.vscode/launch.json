@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UsoBucleFor",
+            "request": "launch",
+            "mainClass": "app.UsoBucleFor",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PesoIdeal",
             "request": "launch",
             "mainClass": "app.PesoIdeal",
