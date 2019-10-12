@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CompruebaMail",
+            "request": "launch",
+            "mainClass": "app.CompruebaMail",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - UsoBucleFor",
             "request": "launch",
             "mainClass": "app.UsoBucleFor",
