@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UsoArrays2",
+            "request": "launch",
+            "mainClass": "app.UsoArrays2",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - UsoArrays",
             "request": "launch",
             "mainClass": "app.UsoArrays",
