@@ -12,11 +12,10 @@ public class UsoArrays {
         miMatriz[2] = -15;
         miMatriz[3] = 92;
         miMatriz[4] = 71;
-        
-        System.out.println(miMatriz[0]);
-        System.out.println(miMatriz[1]);
-        System.out.println(miMatriz[2]);
-        System.out.println(miMatriz[3]);
-        System.out.println(miMatriz[4]);
+
+        for (int i = 0; i < miMatriz.length; i++) {
+            System.out.println("El valor de índice " + i + " = " + miMatriz[i]);
+        }
+
     }
 }
