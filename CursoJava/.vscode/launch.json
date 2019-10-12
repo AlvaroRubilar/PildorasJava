@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PesoIdeal",
+            "request": "launch",
+            "mainClass": "app.PesoIdeal",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AdivinaNumero",
             "request": "launch",
             "mainClass": "app.AdivinaNumero",
