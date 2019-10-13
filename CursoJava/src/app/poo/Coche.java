@@ -29,11 +29,11 @@ public class Coche {
 
     }
 
-    public void estableceColor() {//setter
-        color = "Azul";
+    public void estableceColor(String colorCoche) {//setter
+        color = colorCoche;
 
     }
-    public String dimeColor() {
+    public String dimeColor() {//getter
 
         return "El color del coche es "+color;
         

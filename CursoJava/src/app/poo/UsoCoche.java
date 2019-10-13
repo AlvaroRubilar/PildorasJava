@@ -8,7 +8,7 @@ public class UsoCoche {
     public static void main(String[] args) {
        
         Coche miCoche = new Coche();
-        miCoche.estableceColor();
+        miCoche.estableceColor("amarillo");
         System.out.println(miCoche.dimeColor());
        
         
