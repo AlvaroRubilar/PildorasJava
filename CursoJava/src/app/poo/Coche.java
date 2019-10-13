@@ -25,7 +25,7 @@ public class Coche {
 
     public String dimeDatosGenerales() {// getter
 
-        return "La plataforma del vehículo tiene " + ruedas + " ruedas " + ". Mide " + largo / 1000
+        return "La plataforma del vehículo tiene " + ruedas + " ruedas, un motor de "+motor + " cc. Mide " + largo / 1000
                 + " metros con un ancho de " + ancho + " cm y un peso de plataforma de " + pesoPlataforma + " Kg";
 
     }
