@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EjemploArray2D",
+            "request": "launch",
+            "mainClass": "app.EjemploArray2D",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ArraysBidimensionales",
             "request": "launch",
             "mainClass": "app.ArraysBidimensionales",
