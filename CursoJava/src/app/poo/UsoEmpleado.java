@@ -29,11 +29,16 @@ public class UsoEmpleado {
         misEmpleados[0] = new Empleado("Paco Gómez", 85000, 1990, 12, 17);
         misEmpleados[1] = new Empleado("Ana López", 95000, 1995, 06, 02);
         misEmpleados[2] = new Empleado("María Martín", 105000, 2002, 03, 15);
-        for (int i = 0; i < 3; i++) {
-            misEmpleados[i].subeSueldo(5);
+        // for (int i = 0; i < 3; i++) {
+        //     misEmpleados[i].subeSueldo(5);
+        // }
+        for (Empleado e : misEmpleados) {
+
+            e.subeSueldo(5);
+            
         }
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Nombre: "+misEmpleados[i].dameNombre()+"\nSueldo: "+misEmpleados[i].dameSueldo()+"\nFecha de Alta: "+misEmpleados[i].dameFechaContrato()+"\n");
+        for (Empleado e : misEmpleados) {
+            System.out.println("Nombre: "+e.dameNombre()+"\nSueldo: "+e.dameSueldo()+"\nFecha de Alta: "+e.dameFechaContrato()+"\n");
         }
     }
 }
