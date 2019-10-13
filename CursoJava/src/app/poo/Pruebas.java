@@ -10,7 +10,7 @@ public class Pruebas {
         Empleados trabajador1 = new Empleados("Paco");
         Empleados trabajador2 = new Empleados("Ana");
         trabajador1.cambiaSeccion("RRHH");
-        trabajador1.cambiaNombre("María");
+      
         System.out.println(trabajador1.devuelveDatos());
         System.out.println(trabajador2.devuelveDatos());
     }
@@ -34,16 +34,14 @@ class Empleados {
 
     }
 
-    public void cambiaNombre(String nom) {
-        nombre = nom;
-    }
+   
 
     public String devuelveDatos() {
 
         return "El nombre es " + nombre + " y la sección es " + seccion;
     }
 
-    private String nombre;
+    private final String nombre;
     private String seccion;
 
 }
