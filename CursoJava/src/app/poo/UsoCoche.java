@@ -9,6 +9,7 @@ public class UsoCoche {
        
         Coche miCoche = new Coche();
         miCoche.estableceColor("amarillo");
+        
         System.out.println(miCoche.dimeColor());
        
         

@@ -10,9 +10,9 @@ public class Coche {
     private int motor;
     private int ruedas;
     private int pesoPlataforma;
-    String color;
-    int pesoTotal;
-    boolean asientosCuero, climatizador;
+    private String color;
+    private int pesoTotal;
+    private boolean asientosCuero, climatizador;
 
     // método constructor
     public Coche() {
