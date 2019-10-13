@@ -7,10 +7,10 @@ public class Pruebas {
 
     public static void main(String[] args) {
 
-        Empleados trabajador1 = new Empleados("Paco");
-        Empleados trabajador2 = new Empleados("Ana");
+        Empleados trabajador1 = new Empleados("Paco", 1);
+        Empleados trabajador2 = new Empleados("Ana", 1);
         trabajador1.cambiaSeccion("RRHH");
-      
+
         System.out.println(trabajador1.devuelveDatos());
         System.out.println(trabajador2.devuelveDatos());
     }
@@ -21,10 +21,11 @@ public class Pruebas {
  * InnerPruebas
  */
 class Empleados {
-    public Empleados(String nom) {
+    public Empleados(String nom, int Id) {
 
         nombre = nom;
         seccion = "Administración";
+        this.Id = Id;
 
     }
 
@@ -34,14 +35,13 @@ class Empleados {
 
     }
 
-   
-
     public String devuelveDatos() {
 
-        return "El nombre es " + nombre + " y la sección es " + seccion;
+        return "El nombre es " + nombre + ", la sección es " + seccion + " y el Id = " + Id;
     }
 
     private final String nombre;
     private String seccion;
+    private int Id;
 
 }
