@@ -40,6 +40,9 @@ class Empleado {
         GregorianCalendar calendario = new GregorianCalendar(agno, mes - 1, dia);
         altaContrato = calendario.getTime();
 
+        ++Idsiguiente;
+        Id = Idsiguiente;
+
     }
 
     public Empleado(String nom) {// constructor
@@ -50,7 +53,7 @@ class Empleado {
 
     public String dameNombre() {// getter
 
-        return nombre;
+        return nombre + " \nId: " + Id;
 
     }
 
@@ -74,5 +77,34 @@ class Empleado {
     private String nombre;
     private double sueldo;
     private Date altaContrato;
+    private static int Idsiguiente;
+    private int Id;
+
+}
+
+/**
+ * Jefatura
+ */
+class Jefatura extends Empleado {
+    public Jefatura(String nom, double sue, int agno, int mes, int dia) {
+
+        super(nom, sue, agno, mes, dia);
+
+    }
+
+    public void estableceIncetivo(double b) {
+
+        incentivo = b;
+
+    }
+
+    public double dameSueldo() {
+
+        double sueldoJefe = super.dameSueldo();// machacando el método
+
+        return sueldoJefe + incentivo;
+    }
+
+    private double incentivo;
 
 }
