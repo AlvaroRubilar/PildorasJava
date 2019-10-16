@@ -66,7 +66,7 @@ class Empleado {
 
     }
 
-    public double dameSueldo() {// getter
+    public final double dameSueldo() {// getter
 
         return sueldo;
     }
@@ -94,7 +94,7 @@ class Empleado {
 /**
  * Jefatura
  */
-final class Jefatura extends Empleado {
+class Jefatura extends Empleado {
     public Jefatura(String nom, double sue, int agno, int mes, int dia) {
 
         super(nom, sue, agno, mes, dia);
