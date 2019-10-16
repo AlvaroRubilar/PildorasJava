@@ -18,7 +18,10 @@ public class UsoEmpleado {
         misEmpleados[3] = new Empleado("Antonio", 47500, 2009, 11, 9);
         misEmpleados[4] = jefeRRHH;// polimorfismo en acción. Principio de sustitución
         misEmpleados[5] = new Jefatura("María", 95000, 1999, 5, 26);
-
+        
+        Jefatura jefaFinanzas =(Jefatura) misEmpleados[5];//casting
+        jefaFinanzas.estableceIncetivo(55000);
+        
         for (Empleado e : misEmpleados) {
 
             e.subeSueldo(5);
