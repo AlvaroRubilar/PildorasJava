@@ -66,7 +66,7 @@ class Empleado {
 
     }
 
-    public final double dameSueldo() {// getter
+    public  double dameSueldo() {// getter
 
         return sueldo;
     }
