@@ -94,7 +94,7 @@ class Empleado {
 /**
  * Jefatura
  */
-class Jefatura extends Empleado {
+final class Jefatura extends Empleado {
     public Jefatura(String nom, double sue, int agno, int mes, int dia) {
 
         super(nom, sue, agno, mes, dia);
@@ -115,5 +115,12 @@ class Jefatura extends Empleado {
     }
 
     private double incentivo;
+
+}
+
+class Director extends Jefatura{
+    public Director(String nom, double sue, int agno, int mes, int dia ){
+        super(nom,sue,agno, mes,dia);
+    }
 
 }
