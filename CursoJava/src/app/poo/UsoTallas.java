@@ -5,12 +5,18 @@ package app.poo;
  */
 public class UsoTallas {
 
-    public static void main(String[] args) {
-        String talla;
+    enum Talla {
+        MINI, MEDIANO, GRANDE, MUY_GRANDE
+    };
 
-        talla="pequeña";
-        talla = "mediana";
-        talla="Grande";
-        talla = "Azul";
+    public static void main(String[] args) {
+
+        Talla s = Talla.MINI;
+        Talla m = Talla.MEDIANO;
+        Talla l = Talla.GRANDE;
+        Talla xl = Talla.MUY_GRANDE;
+
+        
+
     }
 }
