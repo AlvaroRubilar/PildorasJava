@@ -84,33 +84,6 @@ class Empleado2 extends Persona {
 
 }
 
-/**
- * Jefatura
- */
-class Jefatura extends Empleado2 {
-    public Jefatura(String nom, double sue, int agno, int mes, int dia) {
-
-        super(nom, sue, agno, mes, dia);
-
-    }
-
-    public void estableceIncetivo(double b) {
-
-        incentivo = b;
-
-    }
-
-    public double dameSueldo() {
-
-        double sueldoJefe = super.dameSueldo();// machacando el método
-
-        return sueldoJefe + incentivo;
-    }
-
-    private double incentivo;
-
-}
-
 
 
 /**
