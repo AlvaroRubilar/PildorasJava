@@ -2,7 +2,6 @@ package app.poo;
 
 import java.util.*;
 
-
 /**
  * UsoEmpleado
  */
@@ -19,14 +18,12 @@ public class UsoEmpleado {
         misEmpleados[3] = new Empleado("Antonio", 47500, 2009, 11, 9);
         misEmpleados[4] = jefeRRHH;// polimorfismo en acción. Principio de sustitución
         misEmpleados[5] = new Jefatura("María", 95000, 1999, 5, 26);
-       
-       
-      
 
         Jefatura jefaFinanzas = (Jefatura) misEmpleados[5];// casting
         jefaFinanzas.estableceIncetivo(55000);
         System.out.println(jefaFinanzas.tomarDecisiones("Dar más días de vacaciones a los empleados"));
-
+        System.out.println("El jefe " + jefaFinanzas.dameNombre() + "\ntiene un bonus de " + jefaFinanzas.estableceBonus(500));
+        System.out.println(misEmpleados[3].dameNombre()+"\ntiene un bonus de "+misEmpleados[3].estableceBonus(200));
         for (Empleado e : misEmpleados) {
 
             e.subeSueldo(5);
@@ -44,7 +41,7 @@ public class UsoEmpleado {
 /**
  * Empleado
  */
-class Empleado implements Comparable {
+class Empleado implements Comparable, Trabajadores {
 
     public Empleado(String nom, double sue, int agno, int mes, int dia) {
         // constructor
@@ -58,6 +55,10 @@ class Empleado implements Comparable {
         ++Idsiguiente;
         Id = Idsiguiente;
 
+    }
+
+    public double estableceBonus(double gratificacion) {
+        return Trabajadores.bonusBase + gratificacion;
     }
 
     public Empleado(String nom) {// constructor
@@ -111,8 +112,14 @@ class Jefatura extends Empleado implements Jefes {
         super(nom, sue, agno, mes, dia);
 
     }
-    public String tomarDecisiones(String decision){
-        return "Un miembro de la dirección ha tomado la desición de: "+decision;
+
+    public String tomarDecisiones(String decision) {
+        return "Un miembro de la dirección ha tomado la decisión de: " + decision;
+    }
+
+    public double estableceBonus(double gratificacion) {
+        double prima = 2000;
+        return Trabajadores.bonusBase + gratificacion + prima;
     }
 
     public void estableceIncetivo(double b) {
@@ -127,7 +134,6 @@ class Jefatura extends Empleado implements Jefes {
 
         return sueldoJefe + incentivo;
     }
-
 
     private double incentivo;
 
