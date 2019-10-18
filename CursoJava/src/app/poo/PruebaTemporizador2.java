@@ -13,19 +13,17 @@ import java.awt.*;
 public class PruebaTemporizador2 {
 
     public static void main(String[] args) {
-        Reloj miReloj = new Reloj(3000,true);
-        miReloj.enMarcha();
+        Reloj miReloj = new Reloj();
+        miReloj.enMarcha(3000,true);
         JOptionPane.showMessageDialog(null, "Pulsa Aceptar para terminar");
 
     }
 }
 
 class Reloj {
-    public Reloj(int intervalo, boolean sonido) {
-        this.intervalo = intervalo;
-        this.sonido = sonido;
-    }
-    public void enMarcha(){
+    
+    public void enMarcha(int intervalo,final  boolean sonido){
+        // deben ser del tipo final en las clases internas locales
         class DameLaHora2 implements ActionListener{
             public void actionPerformed(ActionEvent evento){
                 Date ahora=new Date();
@@ -40,7 +38,6 @@ class Reloj {
         Timer miTemporizador =new Timer(intervalo, oyente);
         miTemporizador.start();
     }
-    private int intervalo;
-    private boolean sonido;
+    
   
 }
