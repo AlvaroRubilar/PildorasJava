@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PruebaTemporizador2",
+            "request": "launch",
+            "mainClass": "app.poo.PruebaTemporizador2",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PruebaTemporizador",
             "request": "launch",
             "mainClass": "app.poo.PruebaTemporizador",
