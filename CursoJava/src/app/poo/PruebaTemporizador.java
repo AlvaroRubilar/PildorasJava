@@ -5,6 +5,7 @@ import java.util.*;
 import javax.swing.*;
 import javax.swing.Timer;
 import java.awt.event.*;
+import java.awt.*;
 
 /**
  * PruebaTemporizador
@@ -30,6 +31,7 @@ class DameLaHora implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Date ahora = new Date();
         System.out.println("Te pongo la hora cada 5 seg: " + ahora);
+        Toolkit.getDefaultToolkit().beep();
     }
 
 }
