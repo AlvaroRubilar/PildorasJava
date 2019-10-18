@@ -19,20 +19,13 @@ public class UsoEmpleado {
         misEmpleados[3] = new Empleado("Antonio", 47500, 2009, 11, 9);
         misEmpleados[4] = jefeRRHH;// polimorfismo en acción. Principio de sustitución
         misEmpleados[5] = new Jefatura("María", 95000, 1999, 5, 26);
-
-        Empleado directorComercial = new Jefatura("Sandra", 85000, 2012, 05, 05);
-        Comparable ejemplo= new Empleado("Elisabeth", 95000, 2011, 06, 07);
-        if (ejemplo instanceof Empleado) {
-            System.out.println("Es de tipo Jefatura");
-            
-        }
-        if (ejemplo instanceof Comparable) {
-            System.out.println("Implementa Comparable");
-            
-        }
+       
+       
+      
 
         Jefatura jefaFinanzas = (Jefatura) misEmpleados[5];// casting
         jefaFinanzas.estableceIncetivo(55000);
+        System.out.println(jefaFinanzas.tomarDecisiones("Dar más días de vacaciones a los empleados"));
 
         for (Empleado e : misEmpleados) {
 
@@ -112,11 +105,14 @@ class Empleado implements Comparable {
 /**
  * Jefatura
  */
-class Jefatura extends Empleado {
+class Jefatura extends Empleado implements Jefes {
     public Jefatura(String nom, double sue, int agno, int mes, int dia) {
 
         super(nom, sue, agno, mes, dia);
 
+    }
+    public String tomarDecisiones(String decision){
+        return "Un miembro de la dirección ha tomado la desición de: "+decision;
     }
 
     public void estableceIncetivo(double b) {
@@ -131,6 +127,7 @@ class Jefatura extends Empleado {
 
         return sueldoJefe + incentivo;
     }
+
 
     private double incentivo;
 
