@@ -2,6 +2,7 @@ package app.poo;
 
 import java.util.*;
 
+
 /**
  * UsoEmpleado
  */
@@ -18,17 +19,18 @@ public class UsoEmpleado {
         misEmpleados[3] = new Empleado("Antonio", 47500, 2009, 11, 9);
         misEmpleados[4] = jefeRRHH;// polimorfismo en acción. Principio de sustitución
         misEmpleados[5] = new Jefatura("María", 95000, 1999, 5, 26);
-        
-        Jefatura jefaFinanzas =(Jefatura) misEmpleados[5];//casting
+
+        Jefatura jefaFinanzas = (Jefatura) misEmpleados[5];// casting
         jefaFinanzas.estableceIncetivo(55000);
-        
+
         for (Empleado e : misEmpleados) {
 
             e.subeSueldo(5);
 
         }
+        Arrays.sort(misEmpleados);
         for (Empleado e : misEmpleados) {
-            //En dame sueldo se usa segun la clase llamado enlazado dinámico
+            // En dame sueldo se usa segun la clase llamado enlazado dinámico
             System.out.println("Nombre: " + e.dameNombre() + "\nSueldo: " + e.dameSueldo() + "\nFecha de Alta: "
                     + e.dameFechaContrato() + "\n");
         }
@@ -38,7 +40,7 @@ public class UsoEmpleado {
 /**
  * Empleado
  */
-class Empleado {
+class Empleado implements Comparable {
 
     public Empleado(String nom, double sue, int agno, int mes, int dia) {
         // constructor
@@ -66,7 +68,7 @@ class Empleado {
 
     }
 
-    public  double dameSueldo() {// getter
+    public double dameSueldo() {// getter
 
         return sueldo;
     }
@@ -81,6 +83,11 @@ class Empleado {
         double aumento = sueldo * porcentaje / 100;
         sueldo += aumento;
 
+    }
+
+    public int compareTo(Object miObjeto) {
+        Empleado otroEmpleado = (Empleado) miObjeto;
+        return this.sueldo < otroEmpleado.sueldo ? -1 : (this.sueldo > otroEmpleado.sueldo ? 1 : 0);
     }
 
     private String nombre;
@@ -115,12 +122,5 @@ class Jefatura extends Empleado {
     }
 
     private double incentivo;
-
-}
-
-class Director extends Jefatura{
-    public Director(String nom, double sue, int agno, int mes, int dia ){
-        super(nom,sue,agno, mes,dia);
-    }
 
 }
