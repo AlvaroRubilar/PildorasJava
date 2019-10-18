@@ -26,20 +26,21 @@ class Reloj {
         this.sonido = sonido;
     }
     public void enMarcha(){
+        class DameLaHora2 implements ActionListener{
+            public void actionPerformed(ActionEvent evento){
+                Date ahora=new Date();
+                System.out.println("Te pongo la hora cada 3 segundos "+ahora);
+                if (sonido) {//no está definida en la clase interna puede acceder a las variables 
+                    Toolkit.getDefaultToolkit().beep();
+                    
+                }
+            }
+        }
         ActionListener oyente= new DameLaHora2();
         Timer miTemporizador =new Timer(intervalo, oyente);
         miTemporizador.start();
     }
     private int intervalo;
     private boolean sonido;
-    private class DameLaHora2 implements ActionListener{
-        public void actionPerformed(ActionEvent evento){
-            Date ahora=new Date();
-            System.out.println("Te pongo la hora cada 3 segundos "+ahora);
-            if (sonido) {//no está definida en la clase interna puede acceder a las variables 
-                Toolkit.getDefaultToolkit().beep();
-                
-            }
-        }
-    }
+  
 }
