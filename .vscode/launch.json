@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CreandoMarcos",
+            "request": "launch",
+            "mainClass": "app.graficos.CreandoMarcos",
+            "projectName": "CursoJava"
+        }
+    ]
+}
