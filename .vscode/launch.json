@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CreandoMarcoCentrado",
+            "request": "launch",
+            "mainClass": "app.graficos.CreandoMarcoCentrado",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CreandoMarcos",
             "request": "launch",
             "mainClass": "app.graficos.CreandoMarcos",
