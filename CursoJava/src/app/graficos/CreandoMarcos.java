@@ -9,12 +9,13 @@ public class CreandoMarcos {
 
         MiMarco marco1=new MiMarco();
         marco1.setVisible(true);
-        marco1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        marco1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//finaliza  el programa
         
     }
 }
 class MiMarco extends JFrame{
     public MiMarco(){
-        setSize(500,300);
+        setSize(500,300);//tamaño
+        setLocation(500,300);//ubicación
     }
 }
