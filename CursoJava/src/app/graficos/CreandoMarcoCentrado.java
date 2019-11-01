@@ -25,5 +25,8 @@ class MarcoCentrado extends JFrame {
         
         setSize(anchoPantalla/2, alturaPantalla/2);
         setLocation(anchoPantalla/4, alturaPantalla/4);
+        setTitle("Marco Centrado");
+        Image miIcono =miPantalla.getImage("CursoJava/src/app/graficos/retriever.png");
+        setIconImage(miIcono);
     }
 }
