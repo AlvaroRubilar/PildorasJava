@@ -1,4 +1,5 @@
 package app.graficos;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,31 +11,32 @@ public class PruebaDibujo {
         MarcoConDibujos miMarco = new MarcoConDibujos();
         miMarco.setVisible(true);
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+
     }
 
-    
 }
-class MarcoConDibujos extends JFrame{
-    public MarcoConDibujos(){
+
+class MarcoConDibujos extends JFrame {
+    public MarcoConDibujos() {
 
         setTitle("Prueba de Dibujo");
 
         setSize(400, 400);
 
-        LaminaConFiguras  miLamina = new LaminaConFiguras();
+        LaminaConFiguras miLamina = new LaminaConFiguras();
 
         add(miLamina);
-        
+
     }
 }
-class LaminaConFiguras extends JPanel{
+
+class LaminaConFiguras extends JPanel {
 
     public void paintComponent(Graphics g) {
 
         super.paintComponent(g);
 
-        g.drawRect(50, 50,200, 200);
-        
+        g.drawLine(100, 100, 300, 200);
+
     }
 }
