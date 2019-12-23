@@ -27,7 +27,7 @@ class MarcoConColor extends JFrame {
         LaminaConColor miLamina = new LaminaConColor();
 
         add(miLamina);
-        miLamina.setBackground(Color.PINK);
+        miLamina.setBackground(SystemColor.window);
 
     }
 }
