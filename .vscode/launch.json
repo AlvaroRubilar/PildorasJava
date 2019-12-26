@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TrabajandoConFuentes",
+            "request": "launch",
+            "mainClass": "app.graficos.TrabajandoConFuentes",
+            "projectName": "CursoJava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Pruebas",
             "request": "launch",
             "mainClass": "app.graficos.Pruebas",
