@@ -20,7 +20,7 @@ class MarcoConFuentes extends JFrame{
         setSize(400,400);
         LaminaConFuentes miLamina = new LaminaConFuentes();
         add(miLamina);
-        
+        miLamina.setForeground(Color.BLUE);
     }
 }
 class LaminaConFuentes extends JPanel{
@@ -29,11 +29,11 @@ class LaminaConFuentes extends JPanel{
         Graphics2D g2=(Graphics2D) g;
         Font miFuente = new Font("Courier New",Font.BOLD,26);
         g2.setFont(miFuente);
-        g2.setColor(Color.BLUE);
+        
         g2.drawString("Alvaro", 100, 100);
 
-        g2.setFont(new Font("Arial",Font.ITALIC,14));
-        g2.setColor(new Color(128,90,50).brighter());
+        g2.setFont(new Font("Arial",Font.ITALIC,24));
+        
         g2.drawString("Curso de Java", 100, 200);
         
     }
