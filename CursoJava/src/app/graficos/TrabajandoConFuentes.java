@@ -29,6 +29,7 @@ class LaminaConFuentes extends JPanel{
         Graphics2D g2=(Graphics2D) g;
         Font miFuente = new Font("Courier New",Font.BOLD,26);
         g2.setFont(miFuente);
+        g2.setColor(Color.BLUE);
         g2.drawString("Alvaro", 100, 100);
         
     }
