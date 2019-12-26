@@ -31,6 +31,10 @@ class LaminaConFuentes extends JPanel{
         g2.setFont(miFuente);
         g2.setColor(Color.BLUE);
         g2.drawString("Alvaro", 100, 100);
+
+        g2.setFont(new Font("Arial",Font.ITALIC,14));
+        g2.setColor(new Color(128,90,50).brighter());
+        g2.drawString("Curso de Java", 100, 200);
         
     }
 }
