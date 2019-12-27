@@ -1,6 +1,9 @@
 package app.graficos;
 import java.awt.*;
 import javax.swing.*;
+import javax.imageio.*;
+import java.io.*;
+
 /**
  * PruebaImagenes
  */
@@ -26,7 +29,16 @@ class MarcoImagen extends JFrame{
 class LaminaConImagen extends JPanel{
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        File miImagen= new File("CursoJava/src/app/graficos/retriever.png");
+        try {
+            imagen = ImageIO.read(miImagen);
+            
+        } catch (IOException e) {
+            System.out.println("La imagen no se encuentra");
+        }
         
+        g.drawImage(imagen, 5, 5,null);
         
     }
+    private Image imagen;
 }
