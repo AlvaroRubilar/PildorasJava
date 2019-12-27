@@ -30,15 +30,20 @@ class MarcoImagen extends JFrame {
 }
 
 class LaminaConImagen extends JPanel {
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        // File miImagen= new File("CursoJava/src/app/graficos/retriever.png");
+
+    public  LaminaConImagen() {
+        
+
         try {
             imagen = ImageIO.read(new File("CursoJava/src/app/graficos/retriever.png"));
-
+    
         } catch (IOException e) {
             System.out.println("La imagen no se encuentra");
+            // File miImagen= new File("CursoJava/src/app/graficos/retriever.png");
         }
+    }
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
         int anchuraImagen = imagen.getWidth(this);
         int alturaImagen = imagen.getHeight(this);
         g.drawImage(imagen, 0, 0, null);
