@@ -37,8 +37,8 @@ class LaminaConImagen extends JPanel{
             System.out.println("La imagen no se encuentra");
         }
         
-        g.drawImage(imagen, 5, 5,null);
-        g.copyArea(0, 0, 40 , 40, 150, 75);
+        g.drawImage(imagen, 0, 0,null);
+        g.copyArea(0, 0, 10  , 10, 150, 75);
         
     }
     private Image imagen;
