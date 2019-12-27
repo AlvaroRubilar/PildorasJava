@@ -31,7 +31,7 @@ class LaminaConImagen extends JPanel{
         super.paintComponent(g);
         // File miImagen= new File("CursoJava/src/app/graficos/retriever.png");
         try {
-            imagen = ImageIO.read(new File("CursoJava/src/app/graficos/retriever.png"));
+            imagen = ImageIO.read(new File("CursoJava/src/app/graficos/retriever.pn"));
             
         } catch (IOException e) {
             System.out.println("La imagen no se encuentra");
