@@ -1,6 +1,7 @@
 package app.graficos;
 import java.awt.*;
 import javax.swing.*;
+import java.awt.event.*;
 
 /**
  * PruebaEventos
@@ -24,10 +25,15 @@ class MarcoBotones extends JFrame{
 
     }
 }
-class LaminaBotones extends JPanel{
+class LaminaBotones extends JPanel implements ActionListener{
     JButton botonAzul = new JButton("Azul");
     public LaminaBotones() {
         add(botonAzul);
+        botonAzul.addActionListener(this);
+    }
+    public void actionPerformed(ActionEvent e) {
+
+        setBackground(Color.BLUE);
     }
 
 }
