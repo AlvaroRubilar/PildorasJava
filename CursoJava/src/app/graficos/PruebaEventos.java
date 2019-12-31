@@ -25,5 +25,9 @@ class MarcoBotones extends JFrame{
     }
 }
 class LaminaBotones extends JPanel{
+    JButton botonAzul = new JButton("Azul");
+    public LaminaBotones() {
+        add(botonAzul);
+    }
 
 }
